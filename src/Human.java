@@ -1,5 +1,6 @@
 public class Human {
-    public class Head {
+
+    static class Head {
         private String colorHair;
         private String colorEyes;
 
@@ -10,7 +11,7 @@ public class Human {
         public String getColorHair() {return colorHair;}
     }
 
-    public class Leg {
+    static class Leg {
         private int sizeFoot;
         private String legLeftRight;
 
@@ -21,14 +22,12 @@ public class Human {
         public String getLegLeftRight() {return legLeftRight;}
     }
 
-    public class Hand {
-        private String handLeftRight;
+    static class Hand {
         private int numberFinger;
 
-        public void setHandLeftRight(String handLeftRight) {this.handLeftRight = handLeftRight;};
         public void setNumberFinger(int numberFinger) {this.numberFinger = numberFinger;}
 
         public int getNumberFinger() {return numberFinger;}
-        public String getHandLeftRight() {return handLeftRight;}
     }
+
 }
